@@ -1,14 +1,14 @@
-# neutralinojs-typescript
+# neutralinojs-javascript
 
-Typescript starter project for Neutralinojs
+Javascript starter project for Neutralinojs
 
 ## Get started
 
 Clone the repo 
 
 ```bash
-$ git clone https://github.com/neutralinojs/neutralinojs-typescript.git
-$ cd neutralinojs-typescript
+$ git clone https://github.com/neutralinojs/neutralinojs-javascript.git
+$ cd neutralinojs-javascript
 ```
 
 Install dependencies 
