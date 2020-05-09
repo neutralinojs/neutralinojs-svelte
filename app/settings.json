@@ -1,10 +1,14 @@
 {
     "appname" : "myapp",
-    "appport" : "5006",
+    "appport" : "0",
     "mode" : "window",
     "window" : {
         "width" : "1000",
         "height" : "700",
-        "fullscreen" : false
+        "fullscreen" : false,
+        "alwaysontop" : false,
+        "iconfile" : "neutralino.png",
+        "enableinspector" : false,
+	    "borderlesswindow" : false
     }
 }
