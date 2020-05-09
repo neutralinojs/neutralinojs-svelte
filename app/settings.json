@@ -1,13 +1,10 @@
 {
-    "appname" : "myapp",
-    "appport" : "0",
-    "mode" : "window",
-    "window" : {
-        "width" : "1000",
-        "height" : "700",
-        "fullscreen" : false,
-        "alwaysontop" : false,
-        "enableinspector" : false,
-	"borderlesswindow" : false
+    "appname": "myapp",
+    "appport": "0",
+    "mode": "window",
+    "window": {
+        "title": "My app",
+        "width": "1000",
+        "height": "700"
     }
 }
