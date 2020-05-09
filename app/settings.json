@@ -9,6 +9,6 @@
         "alwaysontop" : false,
         "iconfile" : "neutralino.png",
         "enableinspector" : false,
-	    "borderlesswindow" : false
+	"borderlesswindow" : false
     }
 }
