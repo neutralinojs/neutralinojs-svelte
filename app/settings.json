@@ -1,6 +1,7 @@
 {
     "appname": "myapp",
     "appport": "0",
+    "url": "/",
     "mode": "window",
     "window": {
         "title": "My app",
