@@ -7,7 +7,7 @@ Javascript starter project for Neutralinojs
 Clone the repo 
 
 ```bash
-$ git clone https://github.com/neutralinojs/neutralinojs-javascript.git
+$ git clone https://github.com/malipetek/neutralinojs-svelte.git
 $ cd neutralinojs-javascript
 ```
 
