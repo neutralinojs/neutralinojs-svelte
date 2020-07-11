@@ -1,5 +1,8 @@
 {
     "appname" : "myapp",
     "appport" : "8080",
-    "mode" : "browser"
+    "mode" : "browser",
+    "window": {
+        "borderlesswindow": true
+    }
 }

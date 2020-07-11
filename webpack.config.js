@@ -1,18 +1,30 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const mode = process.env.NODE_ENV || 'development';
+const prod = mode === 'production';
+
 module.exports = {
   entry: path.resolve(__dirname, './src/app.js'),
+  resolve: {
+		alias: {
+			svelte: path.resolve('node_modules', 'svelte')
+		},
+		extensions: ['.mjs', '.js', '.svelte'],
+		mainFields: ['svelte', 'browser', 'module', 'main']
+	},
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          'css-loader',
-        ],
+					/**
+					 * MiniCssExtractPlugin doesn't support HMR.
+					 * For developing, use 'style-loader' instead.
+					 * */
+					prod ? MiniCssExtractPlugin.loader : 'style-loader',
+					'css-loader'
+				],
       },
       {
         test: /\.m?js$/,
@@ -29,16 +41,32 @@ module.exports = {
             ]
           }
         }
-      }
+      },
+      {
+				test: /\.svelte$/,
+				use: {
+					loader: 'svelte-loader',
+					options: {
+						emitCss: true,
+						hotReload: true
+					}
+				}
+			},
     ],
   },
   output: {
-    filename: 'app.js',
+    filename: '[name].js',
+    chunkFilename: '[name].[id].js',
     path: path.resolve(__dirname, './app/assets'),
   },
+  mode,
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'app.css'
+      filename: '[name].css'
     }),
   ],
+  devServer: {
+    writeToDisk: true
+  },
+  devtool: prod ? false: 'source-map'
 };

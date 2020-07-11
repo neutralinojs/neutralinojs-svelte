@@ -1,16 +1,16 @@
 {
-    "appname": "myapp",
-    "appport": "0",
-    "url": "/",
-    "mode": "window",
-    "window": {
-        "title": "My app",
-        "width": "1000",
-        "height": "700",
-        "fullscreen": false,
-        "alwaysontop": false,
-        "iconfile": "neutralino.png",
-        "enableinspector": false,
-        "borderlesswindow": false
-    }
+  "appname": "svelte-template",
+  "appport": "0",
+  "url": "/",
+  "mode": "window",
+  "window": {
+    "title": "My app",
+    "width": "1000",
+    "height": "700",
+    "fullscreen": false,
+    "alwaysontop": false,
+    "iconfile": "neutralino.png",
+    "enableinspector": true,
+    "borderlesswindow": true
+  }
 }

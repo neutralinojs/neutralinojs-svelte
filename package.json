@@ -1,10 +1,12 @@
 {
-  "name": "neutralinojs-typescript",
+  "name": "neutralinojs-svelte",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/malipetek/neutralinojs-svelte.git",
   "scripts": {
     "build": "webpack -p --config webpack.config.js",
+    "dev": "webpack --watch & webpack-dev-server --colors | neu run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,9 +16,15 @@
     "@babel/preset-env": "^7.9.6",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.0",
+    "cross-env": "^5.2.0",
+    "style-loader": "^0.23.1",
+    "svelte": "^3.0.0",
+    "svelte-loader": "2.13.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "mini-css-extract-plugin": "^0.9.0",
     "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
-  }
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {}
 }
