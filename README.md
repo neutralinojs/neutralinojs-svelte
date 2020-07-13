@@ -1,14 +1,14 @@
-# neutralinojs-javascript
+# neutralinojs-svelte
 
-Javascript starter project for Neutralinojs
+Svelte starter project for Neutralinojs
 
 ## Get started
 
 Clone the repo 
 
 ```bash
-$ git clone https://github.com/malipetek/neutralinojs-svelte.git
-$ cd neutralinojs-javascript
+$ git clone https://github.com/neutralinojs/neutralinojs-svelte.git
+$ cd neutralinojs-svelte
 ```
 
 Install dependencies 
