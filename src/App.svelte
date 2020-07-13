@@ -1,21 +1,25 @@
 <script>
-    export let NL_OS = 'Unknown OS';
+    import Information from './components/Information.svelte';
     export let Neutralino;
-    let settings = {};
-    Neutralino.settings.getSettings(function (settingsData) {
-        settings = settingsData;
-    });
+    export let versionInfo = {
+        NL_VERSION,
+        NL_PORT,
+        NL_OS,
+        NL_NAME
+    };
 </script>
 
 <style>
-    :global(body) {
-        background-color: black;
-        color: yellowgreen;
+    #neutralinoapp {
+    text-align: center;
     }
-    h1 {
-		color: yellowgreen;
-	}
+    #neutralinoapp h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color: #000000;
+    }
 </style>
-<img src="/assets/svelte-logo-horizontal.svg" alt="Svelte Logo">
-<h1>Operating System: {NL_OS}</h1>
-<p> { JSON.stringify(settings) } </p>
+<div id="neutralinoapp">
+    <h1>NeutralinoJs</h1>
+    <Information versionInfo={versionInfo}></Information>
+</div>

@@ -1,5 +1,5 @@
 {
-  "appname": "svelte-template",
+  "appname": "myapp",
   "appport": "0",
   "url": "/",
   "mode": "window",
@@ -10,7 +10,7 @@
     "fullscreen": false,
     "alwaysontop": false,
     "iconfile": "neutralino.png",
-    "enableinspector": true,
+    "enableinspector": false,
     "borderlesswindow": true
   }
 }

@@ -6,7 +6,9 @@ Neutralino.init({
         const app = new App({
             target: document.body,
             props: {
-                name: 'worlie',
+                NL_NAME,
+                NL_PORT,
+                NL_VERSION,
                 NL_OS,
                 Neutralino
             }
@@ -15,7 +17,7 @@ Neutralino.init({
         window.app = app;
     },
     pingSuccessCallback : function() {
-        Neutralino
+        
     },
     pingFailCallback : function() {
             app.exit();
